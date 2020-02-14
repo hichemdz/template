@@ -1,0 +1,59 @@
+@import 'sass/_rest';
+@import 'sass/_content';
+@import 'sass/_header';
+@import 'sass/_aside.scss';
+@import 'sass/_footer';
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    //background:#ff3;
+    font-size:$font_g;
+}
+.wrapper{
+  overflow: hidden;
+  min-height:500px;
+  @include transtion;
+  &.sideL-show{
+        .content{
+            padding-left:$width-aside;
+        }//.contet
+        &.content{
+
+            padding-left:$width-aside ;
+        }//.sidel.content
+        .asideL{
+          width:$width-aside;
+          .heard-aside
+          {
+              .btn{
+                  background:$colr_b !important;
+              }
+          }
+          .nav-item{
+              .nav-link{
+                  font-size: $font_s ;
+                  .icon{
+                      @include transtion;
+                      margin-right: $width_aside / 7;
+                  }//.icon
+                  .text-aside{
+                      display: inline-block;
+                      opacity: 1;
+                      font-size: $font_s;
+                  }
+              }//.navlik
+          }//.navItem
+
+      }//.asdel
+  }//.aside show
+  @media (min-width: 992px){
+    aside{
+        &.asideL{
+        }//.asideL
+        //width:$width-aside/4 !important;
+    }//aside
+    .content{
+        padding-left:$width-aside / 4 ;
+    }
+  }//media
+}//.wrapper

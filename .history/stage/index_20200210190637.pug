@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    include pug/includes/links
+    title hichem test       
+  body
+    //.sideL-show
+    .wrapper.position-relative
+        //- header
+        include pug/includes/header
+        //- aside-left
+        include pug/includes/asideL
+        //- content
+        .content
+          .container-fluid
+            .row
+                .col-md-4
+                   //- aside-content
+                   include pug/includes/asideCL
+                .col-md-8.d-md-block.d-none.bg-primary 8
+                   //- container-content
+                   include pug/includes/content_chat
+
+        //- aside-left
+        include pug/includes/asideR
+    include pug/includes/scripts

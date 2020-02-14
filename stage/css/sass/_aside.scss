@@ -1,0 +1,71 @@
+aside{
+    padding-top:60px !important;
+    width:$width-aside / 4;
+    max-width:$width_aside;
+    height:100%;
+    background:$colr_as;
+    box-shadow: 0px 0px 9px 1px rgba(221, 223, 226, 0.3);
+    z-index:99;
+    @include transtion;
+    &:hover{
+      width:$width-aside;
+      .nav-item{ 
+        .nav-link{
+             font-size: $font_s;
+            .icon{
+                margin-right: $width_aside / 7;
+            }//.icon
+            .text-aside{
+                display: inline;
+                opacity: 1;
+                font-size:$font_s !important;
+            }
+        }//.navlik
+       }//.navItem
+    }//.hover
+    //background-color: red;
+    overflow: hidden;
+    .heard-aside
+    {
+        .btn{
+            background:$colr_b !important;
+        }
+    }
+    .nav-item{
+        @include transtion;
+        overflow: hidden;
+        margin-bottom:0.6em;
+        border-left:solid $colr_as 2px;
+        text-align: center;
+        &:hover{     
+            @extend .active;
+        }//hoverNavItem
+        &.active{ 
+            border-left:solid $colr_b 2px;
+            .nav-link{
+                   color:$colr_b;
+                .icon{
+                    color:$colr_b;
+                }//.icon
+            }//.navlnk
+        }//activeNqvItem
+        .nav-link{
+            @include transtion;
+            color:#333;
+            font-weight: bold;
+            font-size: $font_s + .4;
+            text-align:center;
+            
+            .icon{
+                @include transtion;
+                color:$colr_s;
+                
+            }//.icon
+            .text-aside{
+                opacity:0;
+                display: none;
+            }
+        }//.navlik
+    }//.navItem
+
+}

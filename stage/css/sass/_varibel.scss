@@ -1,0 +1,13 @@
+$width_aside : 230px;
+$colr_s :rgb(139, 136, 136);
+$_secandry:rgba(197, 194, 194, .3);
+$colr_b:#0099ff;
+$colr_as:#fff;
+$tarsTile:1s ;
+$font_g:1em;
+$font_s:.9em;
+$w-clOp:2em;
+@mixin transtion {
+     transition:all .1s linear;
+
+}
